@@ -1,0 +1,28 @@
+{
+	"index": {
+   	"max_ngram_diff": 10
+  },
+  "analysis" : {
+    "custom_ngram":{
+      "content":{
+        "type":"custom",
+        "filter": [
+            "lowercase",
+            "asciifolding",
+						"1_10_grams"					
+        ],
+				"char_filter": [
+            "html_strip"
+        ],
+				"tokenizer":"standard"
+      }
+    },
+		"filter": {
+		"1_10_grams": {
+			"type": "ngram",
+			"min_gram": 1,
+			"max_gram": 10
+		}
+  }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "author": {
+      "type": "object",
+			"properties": {
+				"author_id":  { "type": "integer" },
+				"screen_name":  { "type": "text" },
+				"name":  { "type": "text" },
+				"description":  { "type": "text" },
+				"followers_count":  { "type": "integer" },
+				"friends_count":  { "type": "integer" },
+				"statuses_count":  { "type": "integer" }
+			}
+    },
+		"content":  { "type": "text" },
+		"retweet_count":  { "type": "integer" },
+		"favorite_count":  { "type": "integer" },
+		"happened_at":  { "type": "date" },
+		"country":  { "type": "keyword" },
+		"neg": {"type":"double"},
+		"neu": {"type":"double"},
+		"pos": {"type":"double"},
+		"compound": {"type":"double"},
+		"hashtags": { "type": "keyword" },
+		"mentions": { "type": "keyword" }
+  }
+}

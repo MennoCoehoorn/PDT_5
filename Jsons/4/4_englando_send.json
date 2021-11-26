@@ -1,0 +1,19 @@
+{
+  "analysis" : {
+    "englando":{
+      "content":{
+        "type":"custom",
+        "filter": [
+						"english_possessive_stemmer",
+            "lowercase",
+            "english_stop",
+						"english_stemmer"					
+        ],
+				"char_filter": [
+            "html_strip"
+        ],
+				"tokenizer":"standard"
+      }
+    }
+  }
+}
