@@ -1,19 +1,25 @@
 {
   "analysis" : {
-    "englando":{
-      "content":{
-        "type":"custom",
-        "filter": [
-						"english_possessive_stemmer",
-            "lowercase",
-            "english_stop",
-						"english_stemmer"					
-        ],
-				"char_filter": [
-            "html_strip"
-        ],
-				"tokenizer":"standard"
-      }
-    }
+    "analyzer": {
+			"englando":{
+					"type":"custom",
+					"filter": [
+							"english_possessive_stemmer",
+							"lowercase",
+							"stop",
+							"stemmer"					
+					],
+					"char_filter": [
+							"html_strip"
+					],
+					"tokenizer":"standard"
+    	}
+		},
+		"filter":{
+			"english_possessive_stemmer":{
+				"type": "stemmer",
+				"language": "possessive_english"
+			}
+		}
   }
 }
