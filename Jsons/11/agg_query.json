@@ -1,0 +1,22 @@
+{
+  "size": 0,
+	"aggs": {
+    "hashes": {
+      "filter": { "terms": { "hashtags": ["deepstatevirus","deepstatevaccine","deepstatefauci"] } },
+			"aggs": {
+				"tweets_over_time": {
+      		"date_histogram": {
+						"min_doc_count": 1,
+        		"field": "happened_at",
+						"calendar_interval": "week"
+     	 		},
+					"aggs": {
+						"retweet_count":{
+							"sum": {"field": "retweet_count"}
+						}
+					}
+    		}
+			}
+		}
+	}
+}
