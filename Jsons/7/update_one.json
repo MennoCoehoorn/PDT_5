@@ -1,0 +1,11 @@
+//_update_by_query
+{
+	"script": {
+    "source": "ctx._source.author.friends_count++"
+  },
+  "query": {
+    "match": {
+      "pg_id": "1026196340299026432"
+    }
+  }
+}

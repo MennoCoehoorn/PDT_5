@@ -1,0 +1,6 @@
+//localhost:9200/tweets/_update/407jZX0BeaXnLsZrQ7SA
+{
+	"script": {
+    "source": "ctx._source.retweet_count++"
+  }
+}

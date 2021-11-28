@@ -1,0 +1,21 @@
+//_search
+{
+	"query": {
+		 "nested": {
+			 	"path": "author",
+			 	"query": {
+					"bool": {
+						"must": [
+							{
+								"range": {
+									"author.followers_count": {
+										"gte": 100000
+									}
+								}	
+							}
+						]
+					}
+				}
+		 }
+	}
+}
