@@ -1,0 +1,26 @@
+{
+  "took": 7,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "hashes": {
+      "doc_count": 0,
+      "tweets_over_time": {
+        "buckets": []
+      }
+    }
+  }
+}

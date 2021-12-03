@@ -1,0 +1,43 @@
+{
+  "took": 4,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "hashes": {
+      "doc_count": 2,
+      "tweets_over_time": {
+        "buckets": [
+          {
+            "key_as_string": "2020-02-24T00:00:00.000Z",
+            "key": 1582502400000,
+            "doc_count": 1,
+            "retweet_count": {
+              "value": 1.0
+            }
+          },
+          {
+            "key_as_string": "2020-04-06T00:00:00.000Z",
+            "key": 1586131200000,
+            "doc_count": 1,
+            "retweet_count": {
+              "value": 5.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

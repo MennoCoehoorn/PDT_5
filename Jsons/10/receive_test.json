@@ -1,0 +1,46 @@
+{
+  "took": 2805,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 2,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "hashtags": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "coronavirusoutbreak",
+          "doc_count": 2
+        },
+        {
+          "key": "coronovirus",
+          "doc_count": 2
+        },
+        {
+          "key": "eugenics",
+          "doc_count": 2
+        },
+        {
+          "key": "impeachmenttrial",
+          "doc_count": 2
+        },
+        {
+          "key": "qarmy",
+          "doc_count": 2
+        }
+      ]
+    }
+  }
+}

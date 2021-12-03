@@ -1,0 +1,35 @@
+{
+  "took": 5,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "hashes": {
+      "doc_count": 1,
+      "tweets_over_time": {
+        "buckets": [
+          {
+            "key_as_string": "2020-05-04T00:00:00.000Z",
+            "key": 1588550400000,
+            "doc_count": 1,
+            "retweet_count": {
+              "value": 0.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}
